@@ -1,0 +1,3 @@
+/target
+# it just runs `cargo build` and `cp` you're not missing much
+copy.sh

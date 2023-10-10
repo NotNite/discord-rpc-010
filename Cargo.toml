@@ -1,0 +1,23 @@
+[package]
+name = "discord-rpc-010"
+description = "Discord Rich Presence for 010 Editor"
+authors = ["NotNite <hi@notnite.com>"]
+license = "MIT"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+discord-rich-presence = "0.2.3"
+
+# native fuckery
+proxy-dll = "0.2.5"
+skidscan = "2.0.1"
+iced-x86 = "1.20.0"
+bytemuck = "1.14.0" # converting a &[u8] -> &[u16]
+
+# config file stuff
+serde = { version = "1.0.188", features = ["derive"] }
+toml = "0.8.2"
